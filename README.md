@@ -9,7 +9,9 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 
 ## 1.修改torch.py文件
 
-torch.py文件中，需要在read_data_nmt()函数中，添加“encoding=utf-8”，但是一直报错，如下图所示，无法保存：
+在运行代码块的时候，你应该会遇到一个与d2l.load_nmt()函数有关的问题，就像这个博主描述的这样：https://blog.csdn.net/m0_48085801/article/details/126611608
+
+根据他的提醒，torch.py文件中，需要在read_data_nmt()函数中，添加“encoding=utf-8”，但是一直报错，如下图所示，无法保存：
 
 ![image](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/75af5945-2752-4c86-9b54-8a58b2da2c92)
 
