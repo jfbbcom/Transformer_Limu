@@ -29,6 +29,7 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 ## 3.对于Transformer的理解
 代码的部分，难点在于Encoderblock与Decoderblock的输入分别是什么，笔者使用processon绘制了用函数形式的流程图，方便理解记忆。同时，提供两张CSDN上面的图片供大家参考。
 特别是Decoderblock块在训练阶段与测试阶段的不同。下面是图片以及参考的CSDN文章。
+文章：https://blog.csdn.net/tortorish/article/details/129800946
 
 ![image](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/0ce1ee79-a505-49e0-adb3-5e0048199f4d)
 ![Decoderblock](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/2ac637ef-aadb-4709-8fa4-90e1a1ab4bd2)
