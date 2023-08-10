@@ -26,6 +26,17 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 该pdf中给出的代码多是使用类与对象，所以想要深刻地理解代码，就必须把类与类的继承了解清楚。其中的几个难点是父类函数、super()函数、\_\_init\_\_()函数。
 在笔者的Transformer.py文件中，我用[have a try]注释进行了分块，在运行时，只需要将[have a try]及其下面的代码取消注释，方可运行。
 
+## 3.对于Transformer的理解
+代码的部分，难点在于Encoderblock与Decoderblock的输入分别是什么，笔者使用processon绘制了用函数形式的流程图，方便理解记忆。同时，提供两张CSDN上面的图片供大家参考。
+特别是Decoderblock块在训练阶段与测试阶段的不同。下面是图片以及参考的CSDN文章。
+
+![image](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/0ce1ee79-a505-49e0-adb3-5e0048199f4d)
+![Decoderblock](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/2ac637ef-aadb-4709-8fa4-90e1a1ab4bd2)
+![Train_process](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/ee396240-8621-465b-866b-f16f1805416e)
+![Test_process](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/680e9e31-a7d1-497a-bb46-71a61356f21c)
+
+
+
 ## 3.一些快捷键分享
 
 - 注释、取消注释：ctrl+/
