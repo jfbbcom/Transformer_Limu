@@ -37,7 +37,7 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 
 
 
-## 3.一些快捷键分享
+## 4.一些快捷键分享
 
 - 注释、取消注释：ctrl+/
 
