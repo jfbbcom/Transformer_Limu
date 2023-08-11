@@ -50,7 +50,7 @@ def train_seq2seq(net, data_iter, lr, num_epochs, tgt_vocab, device):
   ```
 结果图：
 
-![Epoch-loss](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/d872c80c-647b-4b69-9312-49d3fa2c2a55)
+![Epoch-loss]("https://github.com/jfbbcom/Transformer_Limu/blob/main/Epoch-loss.png")
 
 ## 2.文中的代码
 
