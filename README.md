@@ -45,3 +45,5 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 - 打出间隔：选中一部分代码，tab
 
 - 取消间隔：shift+tab
+
+- 查找函数：ctrl+点击想要查询的函数
