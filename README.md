@@ -64,13 +64,14 @@ def train_seq2seq(net, data_iter, lr, num_epochs, tgt_vocab, device):
 在笔者的Transformer.py文件中，我用[have a try]注释进行了分块，在运行时，只需要将[have a try]及其下面的代码取消注释，方可运行。
 
 ## 3.对于Transformer的理解
-代码的部分，难点在于Encoderblock与Decoderblock的输入分别是什么，笔者使用processon绘制了用函数形式的流程图，方便理解记忆。同时，提供两张CSDN上面的图片供大家参考。
-特别是Decoderblock块在训练阶段与测试阶段的不同。下面是图片以及参考的CSDN文章。
+代码的部分，难点在于Encoderblock与Decoderblock的输入分别是什么以及一些参数的区别，如num_hiddens与num_layers、Decoderblock块在训练阶段与测试阶段的输入区别。笔者使用processon绘制了用函数形式的流程图，方便理解记忆。同时，提供两张CSDN上面的图片供大家参考。
+下面是图片以及参考的CSDN文章：
 文章：https://blog.csdn.net/tortorish/article/details/129800946
 
 <p align="center">
-    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/0ce1ee79-a505-49e0-adb3-5e0048199f4d.png" width="500px">
-    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/2ac637ef-aadb-4709-8fa4-90e1a1ab4bd2.png" width="500px">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/41376646-85c2-47f1-bb89-713743c3d88e.png" width="1000px">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/b160d63f-f496-4b05-8539-17263cb66689.png"
+width="1000px">
     <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/ee396240-8621-465b-866b-f16f1805416e.png" width="1000px">
     <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/680e9e31-a7d1-497a-bb46-71a61356f21c.png" width="1000px">
 </p>
