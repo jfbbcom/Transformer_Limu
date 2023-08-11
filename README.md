@@ -17,7 +17,7 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 
 根据他的提醒，torch.py文件中，需要在read_data_nmt()函数中，添加“encoding=utf-8”，但是一直报错，如下图所示，无法保存：
 
-![image](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/75af5945-2752-4c86-9b54-8a58b2da2c92.png#pic_center)
+<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/75af5945-2752-4c86-9b54-8a58b2da2c92.png" width="500px">
 
 原因是在对torch.py文件进行修改的时候会弹出一个窗口，我们需要选择第三项（开始我就是选的第一项qwq）
 
