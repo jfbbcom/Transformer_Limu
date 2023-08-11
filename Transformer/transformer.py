@@ -228,14 +228,15 @@ class DecoderBlock(nn.Module):   # 解码器块类，继承自nn.Module
         # 初始化为None。这里的state[2][self.i]是指解码器Decoder在当前时间步i之前的输出表示，
         # 而self.i表示当前Decoder块的索引。在训练阶段，state[2][self.i]被设置为None，
         # 表示当前Decoder块之前没有其他Decoder块的输出表示。
+        # masked multihead attention输入设置
+        if state[2][self.i] is None:
+            # 将输入X的值传给k值
+            key_values = X
         # 2.在预测阶段，输出序列是通过词元一个接着一个解码的。state[2][self.i]
         # 包含着直到当前时间步第i个块解码的输出表示。所以在预测阶段，state[2][self.i]
         # 不为None，表示当前Decoder块之前已经有其他Decoder块的输出表示，并且将其与当前时间步
         # 的输入张量X进行拼接，得到key_values作为当前时间步的输入。
         # 训练阶段或者是解码器块的第一个时间步
-        if state[2][self.i] is None:
-            # 将输入X的值传给k值
-            key_values = X
         # 预测阶段且不是解码器块的第一个时间步
         else:
             # 将之前的decoder的输出和 X 这两个张量在维度 1 上进行拼接
@@ -389,15 +390,9 @@ decoder = TransformerDecoder(
     norm_shape, ffn_num_input, ffn_num_hiddens, num_heads,
     num_layers, dropout)
 net = d2l.EncoderDecoder(encoder, decoder)
-d2l.train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
-#
-# # 在代码中绘制损失与 epoch 的关系图
-# # 假设 'loss_values' 是一个存储了每个 epoch 损失值的列表
-# plt.plot(loss_values)
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.title('Loss vs Epoch')
-plt.show()  # 显示图形窗口
+
+# # [have a try]
+# d2l.train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 
 # # [have a try]
 # # 训练结束后，使⽤Transformer模型将⼀些英语句⼦翻译成法语，并且计算它们的BLEU分数。
