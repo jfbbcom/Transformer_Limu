@@ -21,7 +21,7 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 
 原因是在对torch.py文件进行修改的时候会弹出一个窗口，我们需要选择第三项（开始我就是选的第一项qwq）
 
-![image](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/72ad35a5-8322-4f7b-a46d-dcd073c571cb)
+<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/72ad35a5-8322-4f7b-a46d-dcd073c571cb.png" width="500px">
 
 然后就可以进行修改了。
 
