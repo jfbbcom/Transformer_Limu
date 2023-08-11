@@ -63,11 +63,10 @@ def train_seq2seq(net, data_iter, lr, num_epochs, tgt_vocab, device):
 特别是Decoderblock块在训练阶段与测试阶段的不同。下面是图片以及参考的CSDN文章。
 文章：https://blog.csdn.net/tortorish/article/details/129800946
 
-![image](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/0ce1ee79-a505-49e0-adb3-5e0048199f4d)
-![Decoderblock](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/2ac637ef-aadb-4709-8fa4-90e1a1ab4bd2)
-![Train_process](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/ee396240-8621-465b-866b-f16f1805416e)
-![Test_process](https://github.com/jfbbcom/Transformer_Limu/assets/106417483/680e9e31-a7d1-497a-bb46-71a61356f21c)
-
+<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/0ce1ee79-a505-49e0-adb3-5e0048199f4d.png" width="500px">
+<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/2ac637ef-aadb-4709-8fa4-90e1a1ab4bd2.png" width="500px">
+<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/ee396240-8621-465b-866b-f16f1805416e.png" width="1000px">
+<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/680e9e31-a7d1-497a-bb46-71a61356f21c.png" width="1000px">
 
 ## 4.一些快捷键分享
 
