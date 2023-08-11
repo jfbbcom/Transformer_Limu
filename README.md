@@ -28,7 +28,7 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 ### (2)训练模块
 
 在训练的时候，在最后的epoch-loss图中，要么没有标题，要么横纵坐标显示不出来。解决方法就是查看d2l.train_seq2seq()函数，发现它就是torch.py文件中，MaskedSoftmaxCELoss()类下，train_seq2seq()函数。仔细阅读，显示图片的是animator对象，ctrl+/搜索，在torch.py文件的288行即为它的定义，笔者仔细分析后，发现是因为figsize太小，使得横纵坐标没有显示出来-_-||所以修改figsize大小即可。同时，在train_seq2seq()函数中加入两行代码，用于设置标题与显示animator对象的内容:
-```python
+```
     plt.title('Epoch-Loss')
     animator.fig.show()
 ```
