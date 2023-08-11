@@ -17,11 +17,15 @@ pdf下载：https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf
 
 根据他的提醒，torch.py文件中，需要在read_data_nmt()函数中，添加“encoding=utf-8”，但是一直报错，如下图所示，无法保存：
 
-<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/75af5945-2752-4c86-9b54-8a58b2da2c92.png" width="500px">
+<p align="center">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/75af5945-2752-4c86-9b54-8a58b2da2c92.png" width="500px">
+</p>
 
 原因是在对torch.py文件进行修改的时候会弹出一个窗口，我们需要选择第三项（开始我就是选的第一项qwq）
 
-<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/72ad35a5-8322-4f7b-a46d-dcd073c571cb.png" width="500px">
+<p align="center">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/72ad35a5-8322-4f7b-a46d-dcd073c571cb.png" width="500px">
+</p>
 
 然后就可以进行修改了。
 
@@ -50,8 +54,9 @@ def train_seq2seq(net, data_iter, lr, num_epochs, tgt_vocab, device):
   ```
 结果图：
 
-<img src="https://github.com/jfbbcom/Transformer_Limu/blob/main/Epoch-loss.png" width="500px">
-
+<p align="center">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/blob/main/Epoch-loss.png" width="500px">
+</p>
 
 ## 2.文中的代码
 
@@ -63,10 +68,12 @@ def train_seq2seq(net, data_iter, lr, num_epochs, tgt_vocab, device):
 特别是Decoderblock块在训练阶段与测试阶段的不同。下面是图片以及参考的CSDN文章。
 文章：https://blog.csdn.net/tortorish/article/details/129800946
 
-<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/0ce1ee79-a505-49e0-adb3-5e0048199f4d.png" width="500px">
-<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/2ac637ef-aadb-4709-8fa4-90e1a1ab4bd2.png" width="500px">
-<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/ee396240-8621-465b-866b-f16f1805416e.png" width="1000px">
-<img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/680e9e31-a7d1-497a-bb46-71a61356f21c.png" width="1000px">
+<p align="center">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/0ce1ee79-a505-49e0-adb3-5e0048199f4d.png" width="500px">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/2ac637ef-aadb-4709-8fa4-90e1a1ab4bd2.png" width="500px">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/ee396240-8621-465b-866b-f16f1805416e.png" width="1000px">
+    <img src="https://github.com/jfbbcom/Transformer_Limu/assets/106417483/680e9e31-a7d1-497a-bb46-71a61356f21c.png" width="1000px">
+</p>
 
 ## 4.一些快捷键分享
 
